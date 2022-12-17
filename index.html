@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/slider.css">
+        <script src="https://kit.fontawesome.com/ee315df075.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header></header>
+        <main id="main">
+            <div id="container">
+                <div class="clock-container">
+                    <span>00:00</span>
+                    <i id="clock-option" class="fa-solid fa-ellipsis"></i>  
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="clockSlider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <span class="heading">Good Morning,</span>
+                    <input type="text" name="name" id="name" value="Ryan" required>
+                    <span id="name-option" class="fa-solid fa-ellipsis"></span>
+                </div>
+                <form>
+                    <p class="heading">What is your main focus for today?</p>
+                    <input type="text" name="mainFocus" id="mainTodo" required>
+                <div id="hiddenTodo">
+                    <p class="heading">TODAY</p>
+                    <input type="checkbox" id="mainCheck" name="mainFocus">
+                    <label for="mainFocus" class="mainFocus">Test</label>
+                    <i id="main-option" class="fa-solid fa-ellipsis"></i>  
+                    <p id="sucess">Great Work!</p>      
+                </div>
+                </form>
+                <div id="quotes-container">
+                    <p class="quotes">“Do what you can, with what you have, where you are.”</p>
+                    <p class="author">Theodore Roosevelt</p>
+                </div>
+                <footer id="footer">
+                    <div id="settingscontain">
+                        <div id="settings"><i class="fa-solid fa-gear"></i></div>
+                        <div id="settingsmodal" class="modal">
+                            <div class="settingsmodalcontent">
+                                <span id="closeBtn" class="closeBtn">&times;</span>
+                                <p>Settings</p><br>
+                                <p>Help</p><br>
+                                <p>About</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="todo">Todo</div>
+                </footer>
+            </div>
+        </main>
+    
+        <script type="text/javascript" src="./scripts/clock.js"></script>
+        <script src="./scripts/settingsmodal.js"></script>
+        <script> src="./scripts/background.js"</script>
+    </body>
+</html>
